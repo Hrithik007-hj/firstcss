@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <!-- Link to the style sheet -->
+    <link rel = "stylesheet" href = "css/style.css">
+    
+    <!-- This rule will only style the h1 in this file, not any other files. -->
+    <style>
+        h1{
+            border: 10px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- These links will appear using the default browser style. -->
+    <nav>
+        <li><a href = "CSS-intro.html">Page One</a></li>
+        <li><a href = "CSS-intro2.html">Page Two</a></li>
+    </nav>
+    <main>
+        <h1>Introduction to CSS</h1>
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <!-- This is an example of how the style attribute takes precedence over the styling from the external stylesheet. -->
+        <p style = "color:red;font-size:48px">Third paragraph.  It used the style attribute.  BAD PRACTICE!  Open Inspect Element and you can see how lines crossing out the other styles.</p>
+        <p>Fourth paragraph</p>
+    </main>
+    
+</body>
+</html>
